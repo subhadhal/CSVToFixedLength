@@ -1,0 +1,14 @@
+<beanio xmlns="http://www.beanio.org/2012/03">
+  <stream name="orderHeader" format="fixedlength">
+    <record name="orderHeader" class="converter.OrderHeaderBean">
+      <field name="invoiceNo" length="8" type="int"/>
+      <field name="salesmanCode" length="10"/>
+      <field name="customerNo" length="15"/>
+      <field name="orderDate" length="10" type="date" format="dd-MM-yyyy"/>
+      <field name="orderNo" length="8" type="int"/>
+      <field name="vehicleNo" length="12"/>
+      <field name="paymentType" length="1"/>
+      <field name="discount" length="6"/>
+    </record>
+  </stream>
+</beanio>

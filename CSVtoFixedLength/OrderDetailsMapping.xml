@@ -1,0 +1,11 @@
+<beanio xmlns="http://www.beanio.org/2012/03">
+  <stream name="orderDetails" format="fixedlength">
+    <record name="orderDetails" class="converter.OrderDetailsBean">
+      <field name="invoiceNo" type="int" length="8" />
+      <field name="productCode" length="15"/>
+      <field name="sumOfQtyCases" type="int" length="5"/>
+      <field name="sumOfQtyPacks" type="int" length="3"/>
+      <field name="sumOfQtyPieces" type="int" length="3"/>
+    </record>
+  </stream>
+</beanio>
